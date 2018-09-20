@@ -7,8 +7,7 @@ $(document).ready(function(){
         var prenom = $("#prenom").val();
         var parameters = 'prenom=' + prenom;
         $.post('ajax.php', parameters, function(data){
-            $("#abonnes").html(data.resultat);
-            $("#prenom").html(data.resultat);
+           console.log(data);
         }, 'json')
     }
 });
